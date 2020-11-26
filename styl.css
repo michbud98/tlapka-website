@@ -1,3 +1,4 @@
+/*---------  index, headera apod.  --------------*/
 html,
 body {
   margin: 0;
@@ -36,6 +37,12 @@ html {
   color: black;
   margin: 0 10px;
   line-height: 70px;
+}
+
+/* Activate when mouse hovers over link */
+.menu a:hover{
+  text-decoration: dashed;
+  border-bottom: 3px solid black;
 }
 
 span {
@@ -98,15 +105,62 @@ ul.breadcrumb li a:hover {
     display: none;
   }
   .menu a {
-    display: block;
+    flex-basis: auto;
+    flex-shrink: 3;
     position: relative;
     border-bottom: 1px solid #eaeaeb;
     font-size: 17px;
     background-color: #ddd;
     padding: 12px 16px;
-    min-width: 130px;
+    max-width: 130px;
+    min-width: 50px;
   }
   #toggle:checked + .menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 }
+
+/*--------- Produkty --------------*/
+
+/* Hlavní flex kontejner pro main */
+main.container-produkty {
+  display: flex;
+  flex-direction: column;
+  /* margin-top, margin-right, margin-bottom, and margin-left */
+  margin: 0 15px 0 15px;
+}
+
+ 
+.container-produkty > div {
+  margin: 10px;
+  padding: 20px;
+}
+
+/* Vytvoření dalších flexboxů uvnitř v flexboxu main */
+div.item {
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 0;
+}
+
+/* Jen pro kategorie */
+div.kategorie {
+  justify-content: space-around;
+}
+
+div.kategorie a {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  margin: 1px 2px 1px 2px;
+  text-decoration: none;
+  border-bottom: 1px solid #eaeaeb;
+  background-color: #ddd;
+  padding: 8px 10px;
+  /* flex: <flex-grow> -jak moc může růst <flex-shrink> - jestli se může zmenšovat <flex-width> - optimální velikost předtím, než je značka dána do flexboxu */
+  flex: 0 1 100px;
+}
+
+
+
