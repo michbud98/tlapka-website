@@ -17,7 +17,7 @@ html {
   margin: 0 0 -16px 0;
 }
 
-.container-nav > .logo{
+.container-nav > .logo {
   margin: 15px 0 0 5px;
 }
 
@@ -40,7 +40,7 @@ html {
 }
 
 /* Activate when mouse hovers over link */
-.menu a:hover{
+.menu a:hover {
   text-decoration: dashed;
   border-bottom: 3px solid black;
 }
@@ -76,7 +76,7 @@ ul.breadcrumb li {
 }
 
 /* Add a slash symbol (/) before/behind each list item */
-ul.breadcrumb li+li:before {
+ul.breadcrumb li + li:before {
   padding: 4px;
   color: black;
   content: "/\00a0";
@@ -106,7 +106,6 @@ ul.breadcrumb li a:hover {
   }
   .menu a {
     flex-basis: auto;
-    flex-shrink: 3;
     position: relative;
     border-bottom: 1px solid #eaeaeb;
     font-size: 17px;
@@ -131,7 +130,6 @@ main.container-produkty {
   margin: 0 15px 0 15px;
 }
 
- 
 .container-produkty > div {
   margin: 10px;
   padding: 20px;
@@ -162,5 +160,22 @@ div.kategorie a {
   flex: 0 1 100px;
 }
 
+div.produkty {
+  flex-wrap: wrap;
+}
 
+div.produkt {
+  margin: 0px 20px 0 20px;
+  background-color: honeydew;
+  border: 1px groove gray;
+  height: auto;
+}
 
+/* Všechny značky uvnitř div class produkt */
+div.produkt > * {
+  margin: 5px 5px 5px 5px;
+}
+
+div.produkty img {
+  background: url(http://goo.gl/vyAs27) no-repeat scroll 0 0;
+}
