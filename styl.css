@@ -21,7 +21,7 @@ html {
   margin: 15px 0 0 5px;
 }
 
-.container-nav > .nav {
+.container-nav > nav {
   text-align: right;
   height: 70px;
   line-height: 70px;
@@ -36,7 +36,7 @@ html {
   text-decoration: none;
   color: black;
   margin: 0 10px;
-  line-height: 70px;
+  line-height: 8vh;
 }
 
 /* Activate when mouse hovers over link */
@@ -94,6 +94,125 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(230, 255, 204);
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+}
+
+.main-content .box {
+  flex-basis: 50%;
+  padding: 5px 10px;
+}
+
+.box h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-block-start: 0.2rem;
+  margin-block-end: 0.2rem;
+}
+
+.box .content {
+  margin: 5px 0 0 0;
+}
+
+.right .content .social {
+  margin: 10px 0 0 0;
+}
+
+.right .content .social a{
+  padding: 0 2px;
+}
+
+/* Odkazy na sociální sítě ve footer */
+.right .content .social span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+}
+/* Změna barvy při přejetí myší */
+.right .content .social span:hover{
+  background: #f12020;
+}
+
+/*--------- Produkty --------------*/
+
+/* Hlavní flex kontejner pro .container-produkty */
+.container-produkty {
+  display: flex;
+  flex-direction: column;
+  /* margin-top, margin-right, margin-bottom, and margin-left */
+  margin: 0 15px 0 15px;
+}
+
+.container-produkty > div {
+  margin: 10px;
+  padding: 20px;
+}
+
+/* Vytvoření dalších flexboxů uvnitř v flexboxu main */
+.produkty {
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 0;
+}
+
+/* Jen pro kategorie */
+.kategorie {
+  justify-content: space-around;
+}
+
+.kategorie a {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  margin: 1px 2px 1px 2px;
+  text-decoration: none;
+  border-bottom: 1px solid #eaeaeb;
+  background-color: #ddd;
+  padding: 8px 10px;
+  /* flex: <flex-grow> -jak moc může růst <flex-shrink> - jestli se může zmenšovat <flex-width> - optimální velikost předtím, než je značka dána do flexboxu */
+  flex: 0 1 80px;
+}
+
+.produkty {
+  flex-wrap: wrap;
+}
+
+.produkt {
+  margin: 0px 20px 0 20px;
+  background-color: honeydew;
+  border: 1px groove gray;
+  height: auto;
+}
+
+/* Všechny značky uvnitř div class produkt */
+.produkt > * {
+  margin: 5px 5px 5px 5px;
+}
+
+.produkty img {
+  background: url(http://goo.gl/vyAs27) no-repeat scroll 0 0;
+}
+
+@media only screen and (max-width: 320px) {
+  footer{
+    display: none;
+  }
+}
+
+/* Změna na mobilní rozložení */
 @media only screen and (max-width: 600px) {
   label {
     display: block;
@@ -118,64 +237,4 @@ ul.breadcrumb li a:hover {
     display: flex;
     flex-direction: column;
   }
-}
-
-/*--------- Produkty --------------*/
-
-/* Hlavní flex kontejner pro main */
-main.container-produkty {
-  display: flex;
-  flex-direction: column;
-  /* margin-top, margin-right, margin-bottom, and margin-left */
-  margin: 0 15px 0 15px;
-}
-
-.container-produkty > div {
-  margin: 10px;
-  padding: 20px;
-}
-
-/* Vytvoření dalších flexboxů uvnitř v flexboxu main */
-div.item {
-  display: flex;
-  flex-direction: row;
-  flex: 0 1 0;
-}
-
-/* Jen pro kategorie */
-div.kategorie {
-  justify-content: space-around;
-}
-
-div.kategorie a {
-  display: block;
-  font-size: 20px;
-  text-align: center;
-  margin: 1px 2px 1px 2px;
-  text-decoration: none;
-  border-bottom: 1px solid #eaeaeb;
-  background-color: #ddd;
-  padding: 8px 10px;
-  /* flex: <flex-grow> -jak moc může růst <flex-shrink> - jestli se může zmenšovat <flex-width> - optimální velikost předtím, než je značka dána do flexboxu */
-  flex: 0 1 100px;
-}
-
-div.produkty {
-  flex-wrap: wrap;
-}
-
-div.produkt {
-  margin: 0px 20px 0 20px;
-  background-color: honeydew;
-  border: 1px groove gray;
-  height: auto;
-}
-
-/* Všechny značky uvnitř div class produkt */
-div.produkt > * {
-  margin: 5px 5px 5px 5px;
-}
-
-div.produkty img {
-  background: url(http://goo.gl/vyAs27) no-repeat scroll 0 0;
 }
