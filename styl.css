@@ -1,34 +1,51 @@
-/*---------  index, headera apod.  --------------*/
+/* ----------------- Grid layout ------------------ */
 html,
 body {
-  margin: 0;
+  width: 98vw;
+  height: 100vh;
 }
 
 html {
+  background-color: rgb(238, 240, 236);
   font-family: "helvetica neun", sans-serif;
 }
 
-.container-nav {
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 7vh 2fr auto;
+  grid-template-areas:
+    "header"
+    "bread"
+    "main "
+    "footer";
+  margin: 0 1vw 0 1vw;
+}
+
+/*---------  index, headera apod.  --------------*/
+
+.grid > header.container-nav {
+  grid-area: header;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid #eaeaeb;
+  border-bottom: 2px solid black;
   background-color: rgb(230, 255, 204);
-  /* No space between breadcrumb and navigation */
-  margin: 0 0 -16px 0;
+  /* No space between breadcrumb and navigation and removes free space on left */
+  margin: 0 0 -16px -15px;
 }
 
 .container-nav > .logo {
-  margin: 15px 0 0 5px;
+  margin: 1.5vh 0 0 0.5vw;
 }
 
 .container-nav > nav {
   text-align: right;
-  height: 70px;
-  line-height: 70px;
 }
 
 .menu {
-  margin: 0 30px 0 0;
+  margin: 0 2vh 0 0;
 }
 
 .menu a {
@@ -62,11 +79,14 @@ label {
   display: none;
 }
 
-/* Style the list */
-ul.breadcrumb {
+/* Breadcrumb navigation style */
+.grid > ul.breadcrumb {
+  grid-area: bread;
+  position: sticky;
+  top: 8.2vh; /* Sets breadcrumb navigation below header */
   list-style: none;
-  background-color: #eee;
-  margin-left: -20px;
+  background-color: gray;
+  margin-left: -20px; /* Removes empty space on left */
 }
 
 /* Display list items side by side */
@@ -94,12 +114,16 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+.grid > main {
+  grid-area: main;
+}
+
+/* Footer */
+.grid > footer {
+  grid-area: footer;
   background-color: rgb(230, 255, 204);
   text-align: center;
+  margin-left: -15px; /* Removes empty space on left */
 }
 
 .main-content {
@@ -127,12 +151,12 @@ footer {
   margin: 10px 0 0 0;
 }
 
-.right .content .social a{
+.right .content .social a {
   padding: 0 2px;
 }
 
 /* Odkazy na sociální sítě ve footer */
-.right .content .social span{
+.right .content .social span {
   height: 40px;
   width: 40px;
   background: #1a1a1a;
@@ -142,7 +166,7 @@ footer {
   border-radius: 5px;
 }
 /* Změna barvy při přejetí myší */
-.right .content .social span:hover{
+.right .content .social span:hover {
   background: #f12020;
 }
 
@@ -207,7 +231,7 @@ footer {
 }
 
 @media only screen and (max-width: 320px) {
-  footer{
+  footer {
     display: none;
   }
 }
