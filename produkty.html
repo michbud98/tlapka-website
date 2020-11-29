@@ -1,109 +1,110 @@
 <!DOCTYPE html>
 <html lang="cs-cz">
-  <head>
-    <title>Produkty</title>
-    <link rel="stylesheet" type="text/css" href="styl.css" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  </head>
 
-  <body>
-    <header>
-      <div class="container-nav">
-        <div class="logo">
-          <img src="logo.png" alt="logo" />
-        </div>
-        <div class="nav">
-          <label for="toggle">&#9776;</label>
-          <input type="checkbox" id="toggle" />
-          <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="produkty.html">Produkty</a>
-            <a href="o-nas.html">O nás</a>
-            <a href="kosik.html"><span>Košík</span></a>
+<head>
+  <title>Produkty</title>
+  <link rel="stylesheet" type="text/css" href="styl.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body class="grid">
+  <header class="header">
+    <a href="index.html" class="logo"><img src="logo.png" alt="logo" /></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+    <ul class="menu">
+      <li><a href="produkty.html">Produkty</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="kosik.html" alt="kosik" class="shopping-cart"><span class="fas fa-shopping-cart"></span></a></li>
+    </ul>
+  </header>
+
+  <ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li>Produkty</li>
+  </ul>
+
+
+  <main class="container-produkty">
+    <h1>Produkty</h1>
+    <div>
+      <h2>Kategorie</h2>
+    </div>
+    <div class="item kategorie">
+      <a href="psi.html">Psi</a>
+      <a href="kocky.html">Kočky</a>
+      <a href="ptaci.html">Ptáci</a>
+    </div>
+    <div>
+      <h2>Nejoblíbenější</h2>
+    </div>
+    <div class="item produkty">
+      <div class="produkt">
+        <img src="placeholder.png" />
+        <p>Nazev</p>
+        <p>1000 Kč</p>
+      </div>
+      <div class="produkt">
+        <img src="placeholder.png" />
+        <p>Nazev</p>
+        <p>1000 Kč</p>
+      </div>
+      <div class="produkt">
+        <img src="placeholder.png" />
+        <p>Nazev</p>
+        <p>1000 Kč</p>
+      </div>
+      <div class="produkt">
+        <img src="placeholder.png" />
+        <p>Nazev</p>
+        <p>1000 Kč</p>
+      </div>
+      <div class="produkt">
+        <img src="placeholder.png" />
+        <p>Nazev</p>
+        <p>1000 Kč</p>
+      </div>
+      <div class="produkt">
+        <img src="placeholder.png" />
+        <p>Nazev</p>
+        <p>1000 Kč</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="main-content">
+      <div class="left box">
+        <h3>Adresa</h3>
+        <div class="content">
+          <div class="place">
+            <span class="fas fa-map-marker-alt"></span>
+            <span class="text">K Zelenému vrchu 2556, Čmelákovice</span>
+          </div>
+          <div class="phone">
+            <span class="fas fa-phone-alt"></span>
+            <span class="text">+420 544 233 800</span>
+          </div>
+          <div class="email">
+            <span class="fas fa-envelope"></span>
+            <span class="text">abc@example.com</span>
           </div>
         </div>
       </div>
-      <ul class="breadcrumb">
-        <li><a href="index.html">Home</a></li>
-        <li>Produkty</li>
-      </ul>
-    </header>
-
-    <main class="container-produkty">
-      <h1>Produkty</h1>
-      <div><h2>Kategorie</h2></div>
-      <div class="item kategorie">
-        <a href="psi.html">Psi</a>
-        <a href="kocky.html">Kočky</a>
-        <a href="ptaci.html">Ptáci</a>
-      </div>
-      <div><h2>Nejoblíbenější</h2></div>
-      <div class="item produkty">
-        <div class="produkt">
-          <img src="placeholder.png" />
-          <p>Nazev</p>
-          <p>1000 Kč</p>
-        </div>
-        <div class="produkt">
-          <img src="placeholder.png" />
-          <p>Nazev</p>
-          <p>1000 Kč</p>
-        </div>
-        <div class="produkt">
-          <img src="placeholder.png" />
-          <p>Nazev</p>
-          <p>1000 Kč</p>
-        </div>
-        <div class="produkt">
-          <img src="placeholder.png" />
-          <p>Nazev</p>
-          <p>1000 Kč</p>
-        </div>
-        <div class="produkt">
-          <img src="placeholder.png" />
-          <p>Nazev</p>
-          <p>1000 Kč</p>
-        </div>
-        <div class="produkt">
-          <img src="placeholder.png" />
-          <p>Nazev</p>
-          <p>1000 Kč</p>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <div class="main-content">
-        <div class="left box">
-          <h3>Adresa</h3>
-          <div class="content">
-            <div class="place">
-              <span class="fas fa-map-marker-alt"></span>
-              <span class="text">K Zelenému vrchu 2556, Čmelákovice</span>
-            </div>
-            <div class="phone">
-              <span class="fas fa-phone-alt"></span>
-              <span class="text">+420 544 233 800</span>
-            </div>
-            <div class="email">
-              <span class="fas fa-envelope"></span>
-              <span class="text">abc@example.com</span>
-            </div>
-          </div>
-        </div>
-        <div class="right box">
-          <h3>Kontaktujte nás</h3>
-          <div class="content">
-            <div class="social">
-              <a href="#" alt="facebook"><span class="fab fa-facebook"></span></a>
-              <a href="#" alt="twitter"><span class="fab fa-twitter"></span></a>
-              <a href="#" alt="instagram"><span class="fab fa-instagram"></span></a>
-            </div>
+      <div class="right box">
+        <h3>Kontaktujte nás</h3>
+        <div class="content">
+          <div class="social">
+            <a href="#" alt="facebook"><span class="fab fa-facebook"></span></a>
+            <a href="#" alt="twitter"><span class="fab fa-twitter"></span></a>
+            <a href="#" alt="instagram"><span class="fab fa-instagram"></span></a>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>

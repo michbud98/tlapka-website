@@ -2,40 +2,36 @@
 <html lang="cs-cz">
 
 <head>
-  <title>Produkty kategorie ptáci</title>
+  <title>Produkt kategorie Ptáci</title>
   <link rel="stylesheet" type="text/css" href="styl.css" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
-<body>
-  <header>
-    <div class="container-nav">
-      <div class="logo">
-        <img src="logo.png" alt="logo" />
-      </div>
-      <div class="nav">
-        <label for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle" />
-        <div class="menu">
-          <a href="index.html">Home</a>
-          <a href="produkty.html">Produkty</a>
-          <a href="o-nas.html">O nás</a>
-          <a href="kosik.html"><span>Košík</span></a>
-        </div>
-      </div>
-    </div>
-    <ul class="breadcrumb">
-      <li><a href="index.html">Home</a></li>
+<body class="grid">
+  <header class="header">
+    <a href="index.html" class="logo"><img src="logo.png" alt="logo" /></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+    <ul class="menu">
       <li><a href="produkty.html">Produkty</a></li>
-      <li>Ptáci</li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="kosik.html" alt="kosik" class="shopping-cart"><span class="fas fa-shopping-cart"></span></a></li>
     </ul>
   </header>
+
+  <ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="produkty.html">Produkty</a></li>
+    <li>Ptaci</li>
+  </ul>
+
 
   <main>
 
   </main>
+
   <footer>
     <div class="main-content">
       <div class="left box">

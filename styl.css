@@ -1,5 +1,6 @@
 /* ----------------- Grid layout ------------------ */
-html , body {
+html,
+body {
   margin: 0;
   background-color: rgb(238, 240, 236);
   font-family: "helvetica neun", sans-serif;
