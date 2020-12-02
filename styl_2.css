@@ -1,0 +1,286 @@
+
+body {
+    background-color: white;
+    font-family: Verdana;
+    margin:0;
+    padding: 20px 20px;
+}
+
+h1 {
+    color: orange;
+    font-size: x-large;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+h2 {
+    color: orange;
+    font-size: large;
+    margin-bottom: 3%;
+    margin-top:5%;
+}
+
+p {
+    margin-bottom:1px;
+}
+
+
+form {
+   margin-left:25px;
+}
+
+.right {
+    color: darkgreen;
+    font-size: large;
+    text-align: right;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+s {
+    color: black;
+    font-weight:normal;
+}
+
+img {
+    max-width: 200px;
+    margin:5px;
+}
+
+a {
+    text-decoration:none;
+    color:black;
+}
+
+#btn {
+    background-color: #ddd;
+    border: none;
+    color:black;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+}
+
+button {
+    background-color: forestgreen;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #eaeaeb;
+  background-color: rgb(230, 255, 204);
+  /* No space between breadcrumb and navigation */
+  margin: -20px -20px -20px -20px;
+}
+
+.container-nav > .logo{
+  margin: 15px 0 0 8px;
+}
+
+.container-nav > .nav {
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+}
+
+
+
+.menu {
+  margin: 0 30px 0 0;
+}
+
+.menu a {
+  clear: right;
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+  line-height: 70px;
+}
+
+.menu a:hover{
+  text-decoration: dashed;
+  border-bottom: 3px solid black;
+}
+
+span {
+  color: orange;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+
+#none {
+    margin: 0;
+    font-size: medium;
+    text-decoration-line:none;
+    width:auto;
+    float:none;
+    display:initial;
+}
+
+
+#toggle {
+  display: none;
+}
+
+/* Style the list */
+ul.breadcrumb {
+  list-style: none;
+  background-color: #eee;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 14px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 2px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: green;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .menu a {
+    flex-basis: auto;
+    flex-shrink: 3;
+    position: relative;
+    border-bottom: 1px solid #eaeaeb;
+    font-size: 17px;
+    background-color: #ddd;
+    padding: 12px 16px;
+    max-width: 130px;
+    min-width: 50px;
+  }
+  #toggle:checked + .menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*--------- Produkty --------------*/
+
+/* Hlavní flex kontejner pro main */
+main.container-produkty {
+  display: flex;
+  flex-direction: column;
+  /* margin-top, margin-right, margin-bottom, and margin-left */
+  margin: 0 15px 0 15px;
+}
+
+ 
+.container-produkty > div {
+  margin: 10px;
+  padding: 20px;
+}
+
+/* Vytvoření dalších flexboxů uvnitř flexboxu main */
+.item {
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 0;
+    border-radius: 8px;
+}
+/* jen pro produkty */
+div.produkty {
+    display: flex;
+    flex-direction: row;
+    background-color:antiquewhite;
+    margin: 4px;
+}
+
+.produkty-img {
+    padding: 10px;
+    flex: 20%;
+    text-align:center;
+}
+
+.produkty-text {
+    padding: 10px;
+    flex: 80%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 550px) {
+    div.produkty {
+        flex-direction: column;
+    }
+}
+/* Jen pro kategorie */
+div.kategorie {
+  justify-content: space-around;
+}
+
+div.kategorie a {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    margin: 1px 2px 1px 2px;
+    text-decoration: none;
+    border-bottom: 1px solid #eaeaeb;
+    background-color: #ddd;
+    border-radius: 8px;
+    color: green;
+    padding: 8px 10px;
+    /* flex: <flex-grow> -jak moc může růst <flex-shrink> - jestli se může zmenšovat <flex-width> - optimální velikost předtím, než je značka dána do flexboxu */
+    flex: 0 1 100px;
+}
+
+
+

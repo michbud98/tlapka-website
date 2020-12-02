@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="cs-cz">
+  <head>
+    <title>Obchod Tlapka</title>
+    <link rel="stylesheet" type="text/css" href="styl_2.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header>
+    <div class="container-nav">
+      <div class="logo">
+        <img src="logo.png" alt="logo" />
+      </div>
+      <div class="nav">
+        <label class="navlabel" for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" />
+        <div class="menu">
+          <a href="index.html">O nás</a>
+          <a href="produkty.html">Produkty</a>
+          <a href="kontakt.html">Kontakt</a>
+          <a href="kosik.html"><span>Košík</span></a>
+        </div>
+      </div>
+    </div>
+    <ul class="breadcrumb">
+      <li>Home</li>
+    </ul>
+  </header>
+
+    <main>
+        <h1>Obchod Tlapka (Školní projekt)</h1>
+        <h2>O nás:</h2>
+        <p>(Tento web není pravý eshop) Jsme spolehlivý, rychlý a zaručený internetový obchod s potřebami pro vaše mazlíčky. Už od roku 2001 vám nabízíme široký sortiment pro psi, kočky a hlodavce. Stačí si vybrat!</p>
+        <h1>Produkty</h1>
+        <h2>Kategorie</h2>
+        <div class="item kategorie">
+            <a href="psi.html">
+                <img width="60" src="pes.png" alt="ikona pes" />
+                Psi
+            </a>
+            <a href="kocky.html">
+                <img width="60" src="kocka.png" alt="ikona kocky" />Kočky
+            </a>
+            <a href="hlodavci.html">
+                <img width="60" src="hlodavec.png" alt="ikona hlodavec" />Hlodavci
+            </a>
+        </div>
+        <h2>AKCE týdne</h2>
+
+        <div class="item produkty">
+            <a href="detail_produktu.html">
+                <div class="produkty-img">
+                    <img src="produkt (8).jpg" alt=Cozy Kingdom pelíšek" />
+                </div>
+            </a>
+            <div class="produkty-text">
+                <a href="detail_produktu.html">
+                    <h2>Cozy Kingdom pelíšek</h2>
+                    <p>Luxusní měkký pelíšek s extra vysokým okrajem a zlatým ozdobným lemováním, s praktickým oboustranným polštářkem, velmi útulný, pratelný na 30°C....</p>
+                </a>
+                <p class="right">
+                    <s>689 Kč</s> 549 Kč
+                    <button class="btn btn-secondary" onclick="alert('Produkt přidán do košíku!');">Koupit!</button>
+                </p>
+            </div>
+        </div>
+
+        <div class="item produkty">
+            <a href="detail_produktu.html">
+                <div class="produkty-img">
+                    <img src="produkt (6).jpg" alt="Eyenimal LED-svítící obojek" />
+                </div>
+            </a>
+            <div class="produkty-text">
+                <a href="detail_produktu.html">
+                    <h2>Eyenimal LED-svítící obojek</h2>
+                    <p>Svítící LED obojek, 2 možnosti světla - stálé nebo blikající, viditelnost až 500 m, neztrácejte venku přehled o svém psovi ani večer či v noci, USB nabíjení, voděodolné, s kroužkem na vodítko...</p>
+                </a>
+                <p class="right">
+                    <s>299 Kč</s>  240 Kč
+                    <button class="btn btn-secondary" onclick="alert('Produkt přidán do košíku!');">Koupit!</button>
+                </p>
+            </div>
+        </div>
+
+    </main>
+  </body>
+</html>
