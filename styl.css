@@ -48,6 +48,15 @@ header.header a {
   background-color: white;
 }
 
+/* Style the search box inside the navigation bar */
+.header .menu li input[type="text"] {
+  border: 1px black solid;
+  width: 97%;
+  font-size: 17px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
 .header li a.shopping-cart {
   display: block;
   text-decoration: none;
@@ -63,7 +72,7 @@ header.header a {
   display: block;
   float: left;
   font-size: 2em;
-  margin: 10px 20px;
+  margin: 15px 20px;
   text-decoration: none;
 }
 
@@ -153,6 +162,12 @@ header.header a {
   }
   .header .menu-icon {
     display: none;
+  }
+
+  /* Style the search box inside the navigation bar */
+  .header .menu li input[type="text"] {
+    border: none;
+    width: 16.8vh;
   }
 }
 
