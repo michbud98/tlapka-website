@@ -1,7 +1,7 @@
 body {
-    background-color: white;
-    font-family: Verdana;
-    margin:0;
+  background-color: white;
+  font-family: Verdana;
+  margin: 0;
 }
 
 /* ----------------- Grid layout ------------------ */
@@ -156,7 +156,6 @@ header.header a {
   }
 }
 
-
 /* Diana */
 
 h1 {
@@ -170,19 +169,18 @@ h2 {
   color: orange;
   font-size: large;
   margin-bottom: 3%;
-  margin-top:5%;
+  margin-top: 5%;
 }
 
 p {
-  margin-bottom:1px;
+  margin-bottom: 1px;
 }
-
 
 form {
- margin-left:25px;
+  margin-left: 25px;
 }
 
-.right {
+p.right {
   color: darkgreen;
   font-size: large;
   text-align: right;
@@ -193,23 +191,23 @@ form {
 
 s {
   color: black;
-  font-weight:normal;
+  font-weight: normal;
 }
 
 img {
   max-width: 200px;
-  margin:5px;
+  margin: 5px;
 }
 
 a {
-  text-decoration:none;
-  color:black;
+  text-decoration: none;
+  color: black;
 }
 
 #btn {
   background-color: #ddd;
   border: none;
-  color:black;
+  color: black;
   padding: 10px 15px;
   border-radius: 8px;
   text-align: center;
@@ -235,7 +233,8 @@ table {
   width: 100%;
 }
 
-th, td {
+th,
+td {
   padding: 8px;
   text-align: center;
   border-bottom: 1px solid #ddd;
@@ -247,7 +246,57 @@ th, td {
   grid-area: main;
   margin: 30px 30px;
 }
-    
+
+/* Footer */
+.grid > footer {
+  grid-area: footer;
+  background-color: rgb(230, 255, 204);
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+}
+
+.main-content .box {
+  flex-basis: 50%;
+  padding: 5px 10px;
+}
+
+.box h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-block-start: 0.2rem;
+  margin-block-end: 0.2rem;
+}
+
+.box .content {
+  margin: 5px 0 0 0;
+}
+
+.right .content .social {
+  margin: 10px 0 0 0;
+}
+
+.right .content .social a {
+  padding: 0 2px;
+}
+
+/* Odkazy na sociální sítě ve footer */
+.right .content .social span {
+  height: 40px;
+  width: 40px;
+  background: whitesmoke;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+}
+/* Změna barvy při přejetí myší */
+.right .content .social span:hover {
+  background: lightgray;
+}
 
 /*--------- Produkty --------------*/
 
@@ -259,7 +308,6 @@ main.container-produkty {
   margin: 0 15px 0 15px;
 }
 
- 
 .container-produkty > div {
   margin: 10px;
   padding: 20px;
@@ -267,35 +315,35 @@ main.container-produkty {
 
 /* Vytvoření dalších flexboxů uvnitř flexboxu main */
 .item {
-    display: flex;
-    flex-direction: row;
-    flex: 0 1 0;
-    border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 0;
+  border-radius: 8px;
 }
 /* jen pro produkty */
 article.produkty {
-    display: flex;
-    flex-direction: row;
-    background-color:antiquewhite;
-    margin: 4px;
+  display: flex;
+  flex-direction: row;
+  background-color: antiquewhite;
+  margin: 4px;
 }
 
 div.produkty-img {
-    padding: 10px;
-    flex: 20%;
-    text-align:center;
+  padding: 10px;
+  flex: 20%;
+  text-align: center;
 }
 
 article.produkty-text {
-    padding: 10px;
-    flex: 80%;
+  padding: 10px;
+  flex: 80%;
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 550px) {
-    div.produkty {
-        flex-direction: column;
-    }
+  div.produkty {
+    flex-direction: column;
+  }
 }
 /* Jen pro kategorie */
 div.kategorie {
@@ -303,19 +351,16 @@ div.kategorie {
 }
 
 div.kategorie a {
-    display: block;
-    font-size: 20px;
-    text-align: center;
-    margin: 1px 2px 1px 2px;
-    text-decoration: none;
-    border-bottom: 1px solid #eaeaeb;
-    background-color: #ddd;
-    border-radius: 8px;
-    color: green;
-    padding: 8px 10px;
-    /* flex: <flex-grow> -jak moc může růst <flex-shrink> - jestli se může zmenšovat <flex-width> - optimální velikost předtím, než je značka dána do flexboxu */
-    flex: 0 1 100px;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  margin: 1px 2px 1px 2px;
+  text-decoration: none;
+  border-bottom: 1px solid #eaeaeb;
+  background-color: #ddd;
+  border-radius: 8px;
+  color: green;
+  padding: 8px 10px;
+  /* flex: <flex-grow> -jak moc může růst <flex-shrink> - jestli se může zmenšovat <flex-width> - optimální velikost předtím, než je značka dána do flexboxu */
+  flex: 0 1 100px;
 }
-
-
-
