@@ -11,16 +11,16 @@ body {
   width: 100vw;
   height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 8vh 2fr auto;
+  grid-template-rows: auto 2fr auto;
   grid-template-areas:
     "header"
-    "bread"
     "main "
     "footer";
 }
 
 /*---------  Header  --------------*/
 .header {
+  grid-area: header;
   background-color: rgb(230, 255, 204);
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -157,41 +157,7 @@ header.header a {
   }
 }
 
-/* Breadcrumb navigation style */
-.grid > ul.breadcrumb {
-  grid-area: bread;
-  align-self: start;
-  position: sticky;
-  top: 6.3vh; /* Sets breadcrumb navigation below header */
-  list-style: none;
-  background-color: lightgrey;
-  border-bottom: 1px black solid;
-}
-
-/* Display list items side by side */
-ul.breadcrumb li {
-  display: inline;
-  font-size: 14px;
-}
-
-/* Add a slash symbol (/) before/behind each list item */
-ul.breadcrumb li + li:before {
-  padding: 4px;
-  color: black;
-  content: "/\00a0";
-}
-
-/* Add a color to all links inside the list */
-ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
-
-/* Add a color on mouse-over */
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
-}
+/* Main */
 
 .grid > main {
   grid-area: main;
