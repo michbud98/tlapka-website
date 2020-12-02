@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+    <title>Detail produktu</title>
+    <link rel="stylesheet" type="text/css" href="styl.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body class="grid">
+    <header class="header">
+        <a href="index.html" class="logo"><img src="logo.png" alt="logo" /></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li><a href="produkty.html">Produkty</a></li>
+            <li><a href="index.html">O nás</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="kosik.html" alt="kosik" class="shopping-cart"><span class="fas fa-shopping-cart"></span></a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <h1>Cozy Kingdom pelíšek </h1>
+
+        <div class="item produkty">
+            <div class="produkty-img">
+                <img src="produkt (8).jpg" alt="Cozy Kingdom pelíšek" />
+            </div>
+            <div class="produkty-text">
+                <h2>Na skladě:</h2>
+                <p>5ks</p>
+
+                <h2>Obvyklá doba dodání:</h2>
+                <p>3 dny</p>
+
+                <h2>Popis:</h2>
+                <p>Luxusní měkký pelíšek s extra vysokým okrajem a zlatým ozdobným lemováním, s praktickým oboustranným
+                    polštářkem, velmi útulný, pratelný na 30°C.</p>
+                <p>
+                    Luxusní pelíšek pro kočky i psy.
+                    Vnější strana ze strukturované látky se zlatým lemováním pro kontrastní a luxusní vzhled.
+                    Extra vysoký okraj, na který se může mazlík pohodlně položit.
+                    Dvoubarevný oboustranný polštář, změna vzhledu pelíšku pouhým otočením polštáře.
+                    Měkce vypolstrovaná plocha na ležení, chrání před chladem a tvrdostí podlahy.
+                    Protiskluzové nopky na spodní straně zajistí stabilitu na hladké podlaze.
+                    Snadná údržba: pratelný v pračce na 30°C (šetrný prací program).
+                </p>
+
+                <h2>Parametry:</h2>
+                <p>
+                    Váha: 15kg <br />
+                    Materiál: 100% polyester, fleece
+                </p>
+
+                <h2>Vyberte velikost:</h2>
+                <form>
+                    <input type="radio" id="s" name="s" value="s">
+                    <label id="none" sfor="s">S (Ø 40)</label><br />
+                    <input type="radio" id="m" name="m" value="m">
+                    <label id="none" for="m">M (Ø 60)</label>
+                </form>
+
+                <p class="right">
+                    <s>689 Kč</s> 549 Kč
+                    <button class="btn btn-secondary" onclick="alert('Produkt přidán do košíku!');">Koupit!</button>
+                </p>
+            </div>
+        </div>
+
+
+    </main>
+</body>
+
+</html>

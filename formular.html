@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+    <title>Fakturační údaje</title>
+    <link rel="stylesheet" type="text/css" href="styl.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body class="grid">
+    <header class="header">
+        <a href="index.html" class="logo"><img src="logo.png" alt="logo" /></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li><a href="produkty.html">Produkty</a></li>
+            <li><a href="index.html">O nás</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="kosik.html" alt="kosik" class="shopping-cart"><span class="fas fa-shopping-cart"></span></a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <h1>Košík</h1>
+        <h2>2) Fakturační údaje</h2>
+        <form>
+            <label id="none" for="fname">Jméno:</label><br />
+            <input type="text" id="fname" name="fname"><br />
+            <label id="none" for="lname">Příjmení:</label><br />
+            <input type="text" id="lname" name="lname"><br />
+            <label id="none" for="adress">Ulice:</label><br />
+            <input type="text" id="adress" name="adress"><br />
+            <label id="none" for="town">Město:</label><br />
+            <input type="text" id="town" name="town"><br />
+            <label id="none" for="post_code">PSČ</label><br />
+            <input type="number" id="post_code" name="post_code"><br />
+            <label id="none" for="email">Email:</label><br />
+            <input type="email" id="email" name="email"><br />
+            <label id="none" for="tel">Telefon:</label><br />
+            <input type="tel" id="tel" name="tel"><br />
+        </form>
+        <p class="right"><a id="btn" href="dokonceni.html">Další</a></p>
+    </main>
+</body>
+
+</html>
