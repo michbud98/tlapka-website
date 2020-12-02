@@ -273,20 +273,20 @@ main.container-produkty {
     border-radius: 8px;
 }
 /* jen pro produkty */
-div.produkty {
+article.produkty {
     display: flex;
     flex-direction: row;
     background-color:antiquewhite;
     margin: 4px;
 }
 
-.produkty-img {
+div.produkty-img {
     padding: 10px;
     flex: 20%;
     text-align:center;
 }
 
-.produkty-text {
+article.produkty-text {
     padding: 10px;
     flex: 80%;
 }
