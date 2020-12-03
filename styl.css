@@ -167,7 +167,7 @@ header.header a {
   /* Style the search box inside the navigation bar */
   .header .menu li input[type="text"] {
     border: none;
-    width: 16.8vh;
+    width: 18vh;
   }
 }
 
@@ -285,6 +285,7 @@ td {
   padding: 5px 10px;
 }
 
+
 .box h3 {
   font-size: 1.125rem;
   font-weight: 400;
@@ -297,16 +298,21 @@ td {
   margin: 5px 0 0 0;
 }
 
-.right .content .social {
+.center {
+  border-left: 0.5px gray solid;
+  border-right: 0.5px gray solid;
+}
+
+.center .content .social {
   margin: 10px 0 0 0;
 }
 
-.right .content .social a {
+.center .content .social a {
   padding: 0 2px;
 }
 
 /* Odkazy na sociální sítě ve footer */
-.right .content .social span {
+.center .content .social span {
   height: 40px;
   width: 40px;
   background: whitesmoke;
@@ -316,8 +322,19 @@ td {
   border-radius: 5px;
 }
 /* Změna barvy při přejetí myší */
-.right .content .social span:hover {
+.center .content .social span:hover {
+  color: blue;
   background: lightgray;
+}
+
+.right .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.right a:hover {
+  color: blue;
 }
 
 /*--------- Produkty --------------*/
